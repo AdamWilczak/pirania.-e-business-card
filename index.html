@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pirania, dystrybucja, film, rafael, kino">
+    <title>Pirania - promocja i dystrybucja filmowa</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+
+ 
+
+
+</head>
+<body >
+
+<nav>
+    <div class="menu">
+        <ul>
+            <li><a href="#1">Intro</a></li>
+            <li><a href="#2">Co robię ?</a></li>
+            <li><a href="#3">Kontakt</a></li>
+        </ul>
+   </div>
+</nav>
+
+
+
+<section id=1 class="jeden">
+        <div >
+            <iframe   src="https://www.youtube.com/embed/DSfXXvR4SFc" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    
+</section>   
+  
+
+
+
+
+<section id=2 class="dwa" >
+    <div class="opis">
+        
+       <p> 
+        Wspieram film promocyjnie już na etapie jego <span class="orange">PRODUKCJI</span>.
+        Zajmuję się, kompleksowo <span class="orange">PROMOCJĄ</span>, <span class="orange">MARKETINGIEM</span> i <span class="orange">PRem</span>.
+        Wprowadzam <span class="orange">FILM DO KINA</span>, zgodnie z ustaloną strategią promocji i dystrybucji.
+        <br><br>
+        Doświadczenie zdobywałam w <a href="https://bestfilm.pl" target_blank>Best Film</a> i w <a href="https://gutekfilm.pl" target_blank>Gutek Film</a>.
+        Od 2014 lat, jako PiRania; agencja specjalizująca się w marketingu i dystrybucji filmowej,
+        zajmuję się promocją i dystrybucją filmów kinowych.
+        Pracowałam dla <a href="https://rafaelfilm.pl" target_blank>Rafael Media</a>, <a href="http://www.manana.pl/pl" target_blank>AP MAÑANA</a>, <a href="https://unlimitedfilm.pl" target_blank>Unlimited Film Operation</a>, <a href="https://kinodzieci.pl" target_blank>Stowarzyszenia Nowe Horyzonty</a>,
+        <a href="https://www.sputnikfestiwal.pl" target_blank>Fundacji Wspieram</a> i <a href="http://pnf.pl" target_blank>Polskiej Nagrody Filmowej</a>.
+        <br><br>
+        Sprawdź na <a href="https://filmpolski.pl/fp/index.php?osoba=11133631" target="_blank">filmpolski</a>.
+        </p>
+        
+    </div>
+</section>
+
+
+
+
+<section id=3 class="trzy">
+    <div class="midd">
+        <img src="scr/logo_orange.png" alt="" class="logo"><br>
+        <a href="mailto:ania@pirania.info">ania@pirania.info</a>
+    </div>
+    
+</section>
+
+
+
+<footer>
+<a href="https://aw-p-folio.web.app/" target="_blank">THAN 2022</a>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+            let app = firebase.app();
+            let features = [
+                'auth',
+                'database',
+                'firestore',
+                'functions',
+                'messaging',
+                'storage',
+                'analytics',
+                'remoteConfig',
+                'performance',
+            ].filter(feature => typeof app[feature] === 'function');
+            loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+            console.error(e);
+            loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+    });
+</script>
+
+</body>
+</html>

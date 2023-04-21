@@ -1,0 +1,136 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+html, body {
+    scroll-behavior: smooth;
+}
+nav{
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:#353333;
+    font-size: medium;
+    font-weight: 600;
+    height: 50px;
+    justify-content: center;
+    position: sticky;
+    z-index: 25px;
+}
+a{
+    text-decoration: none;
+    color: #eb880e;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    display:flex;
+    list-style-type: none;
+    width: 60vw;
+    justify-content:space-between;
+    align-items: center;
+}
+ul.show{
+    display: block;
+}
+iframe{
+    width: 90vw;
+    height: 80vh;
+    
+    
+}
+.jeden{
+    display: flex;
+    background-color:#eb880e ;
+    height: 100vh;
+    padding-bottom: 50px;
+    justify-content: center;
+    scroll-margin-top: 100px;
+    scroll-margin-bottom: 100px;
+    align-items: center;
+}
+.dwa{
+    background-color:#961d3d ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trzy{
+    background-color:#184441 ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.midd{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 30vw;
+}
+p{
+    text-align: left;
+}
+.opis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    width: 80vw;
+}
+.orange{
+    color: #eb880e;
+}
+footer{
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color:#353333;
+    font-size: xx-small;
+    height: 25px;
+    justify-content: center;
+    position: sticky;
+}
+
+@media only screen and (max-width:800px){
+    nav{
+    font-weight: 400;
+    height: 30px;
+    }
+    a:hover{
+    text-decoration: none;
+    color: #eb880e;
+    }
+    ul{
+    width: 80vw;
+    }
+    iframe{
+    width: 80vw;
+    height: 40vh;
+    }
+    .logo{
+    width: 50vw;
+    }
+    p{
+    text-align: left;
+    }
+    .opis{
+    font-size: 3vh;
+    }
+    footer{
+    height: 20px;
+    }
+}
